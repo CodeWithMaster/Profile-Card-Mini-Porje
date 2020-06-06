@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+body {
+  background: #f9f3fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h2 {
+  padding: 0.3em 0;
+}
+.card {
+  width: 400px;
+  height: 450px;
+  background: #10455b;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #10455b;
+  position: relative;
+}
+.user {
+  text-align: center;
+  padding-top: 0.5em;
+  background: #ffaf20;
+  color: #10455b;
+  padding: 0.5em 0;
+}
+.user img {
+  width: 150px;
+  box-shadow: 0 0 8px #10455b;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.soical-media {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 0;
+  color: #ffaf20;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.soical-media div {
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.soical-media div:hover {
+  transform: scale(1.1);
+}
+.soical-media div i {
+  font-size: 25px;
+}
+button {
+  background: #ffaf20;
+  border: none;
+  display: block;
+  width: calc(100% - 2em);
+  margin: 0 auto;
+  padding: 0.8em 0;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #10455b;
+  cursor: pointer;
+  box-shadow: 0 0 3px #ffaf20;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s;
+}
+button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: #10455b;
+  border-radius: 0 100px 100px 0;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  transition: all 0.4s;
+}
+button:hover {
+  color: #ffaf20;
+}
+button:hover::before {
+  width: 100%;
+  border-radius: 15px;
+}
